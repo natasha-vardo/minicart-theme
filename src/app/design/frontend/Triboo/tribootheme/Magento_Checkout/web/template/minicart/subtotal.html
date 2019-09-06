@@ -1,0 +1,24 @@
+<div class="subtotal-block">
+    <span class="label">Subtotal</span>
+    <span class="subtotal-result">
+        <!-- ko foreach: elems -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+        <!-- /ko -->
+    </span>
+</div>
+<div class="discount-block">
+    <span class="label">Delivery</span>
+    <div class="discount-label-free">
+        <span class="label-free">Free</span>
+        <span class="subtotal-result">&#36;0</span>
+    </div>
+</div>
+<div class="subtotal">
+    <span class="label">
+        <!-- ko i18n: 'Total' --><!-- /ko -->
+    </span>
+
+    <!-- ko foreach: elems -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+    <!-- /ko -->
+</div>
